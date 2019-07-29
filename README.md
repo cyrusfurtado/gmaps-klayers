@@ -6,22 +6,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Steps required
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Include Google Maps JavaScript Api from cdn
+  * Add google maps api script here
+  * To create a new api key. Navigate to https://console.developers.google.com
+  * Enable Google Maps JavaScript API
+  * Create A new project if one does not exist 
+  * Next from left side menu -> APIs & Services -> Credentials -> Create a new API key -> Paste the key below
+* Install type definitions for googleMaps Javascript API `npm install --save-dev @types/googlemaps`
+* Add index.d.ts file in `src` folder to get ride of TypeScript missing module error & restart developement server
